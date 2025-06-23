@@ -152,7 +152,6 @@ const LexicalRichText = ({
   const editorRef = useRef<LexicalEditor | null>(null);
   const initialStateSet = useRef(false);
 
-  // Função para converter o HTML para o estado do editor
   const importHTML = (editor: LexicalEditor, html: string) => {
     editor.update(() => {
       if (html) {
